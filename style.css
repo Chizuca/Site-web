@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin:auto;
+}
 #centertext{
     text-align: center;
 }
@@ -13,4 +19,9 @@ a {
 }
 .margephoto {
     margin-left: 600px;
+}
+.home{
+    display: flex;
+    background: url("image/pattern-background-png-4.png") no-repeat center;
+    height: 100vh;
 }
