@@ -1,0 +1,13 @@
+#centertext{
+    text-align: center;
+}
+a {
+    color:inherit ;
+}
+.sticky-nav{
+    position: sticky;
+    top: 0;
+}
+.mageragauche {
+    margin-left: 50px;
+}
