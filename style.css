@@ -1,26 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
-.max-width{
-    max-width: 1300px;
-    padding: 0 80px;
-    margin:auto;
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
 }
-#centertext{
-    text-align: center;
+.navbar{
+    position: fixed;
+    width: 100%;
+    background: darkgray;
+    font-family: 'Ubuntu',sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:5px 80px;
+    margin: auto;
 }
-a {
-    color:inherit ;
+.navbar .logo a{
+    color : black;
+    font-size: 35px;
+    font-weight: 600;
 }
-.sticky-nav{
-    position: sticky;
-    top: 0;
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+    color:black;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
 }
-.mageragauche {
-    margin-left: 50px;
-}
-.margephoto {
-    margin-left: 600px;
-}
-.home{
+.home_intro{
     display: flex;
     background: url("Image/bleubackground.png") no-repeat center;
     height: 100vh;
@@ -29,20 +40,20 @@ a {
     background-attachment: fixed;
     font-family: 'Ubuntu',sans-serif;
 }
-.home .max-width{
+.home_content{
     margin:auto 0 auto 40px;
 }
-.home .home-content .text-1
+.home_intro h1
 {
     font-size:27px;
 }
-.home .home-content .text-2
+.home_intro h2
 {
     font-size:75px;
     font-weight: 600;
     margin-left: -3px;
 }
-.home .home-content .text-3
+.home_intro h3
 {
     font-size:40px;
     margin: 5px 0;
