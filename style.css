@@ -73,7 +73,9 @@
 }
 .about_class h2{
     font-family: 'Ubuntu',sans-serif;
+    text-align: center;
 }
-.presentation_image{
+.about_class .left img{
+    background-color: crimson;
     width: 400px;
 }
