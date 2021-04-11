@@ -10,6 +10,7 @@
 body{
     font-family: 'Ubuntu',sans-serif;
 }
+/*NavBar style*/
 nav{
     background: darkgrey;
     height:  80px;
@@ -18,7 +19,9 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding-right: 30px;
+    position: fixed;
 }
+/*NavBar Logo*/
 nav .logo a{
     color : black;
     font-size: 40px;
@@ -28,6 +31,7 @@ nav .logo a{
 nav .logo a span{
     color : coral;
 }
+/*NavBar Menu*/
 nav ul li{
     list-style: none;
     display: inline-block;
@@ -43,6 +47,7 @@ nav ul li a{
 nav ul a:hover{
     color:white;
 }
+/*NavBar Reduction*/
 .checkbtn{
     font-size: 30px;
     color : white;
@@ -55,11 +60,13 @@ nav ul a:hover{
 #check{
     display: none;
 }
-@media (max-width: 865px){
+/*NavBar Délimitation */
+@media (max-width: 885px){
 .checkbtn{
     display: block;
     color : black;
 }
+/*Délimitation Menu*/
 ul{
     position: fixed;
     width: 100%;
@@ -86,7 +93,6 @@ nav ul a:hover{
     left: 0;
 }
 }
-
 /*home section style*/
 .home_intro{
     display: flex;
@@ -100,25 +106,39 @@ nav ul a:hover{
 .home_content{
     margin:auto 0 auto 40px;
 }
-.home_intro h1
-{
+.home_intro h1{
     font-size:27px;
 }
-.home_intro h2
-{
+.home_intro h2{
     font-size:75px;
     font-weight: 600;
     margin-left: -3px;
 }
-.home_intro h3
-{
+.home_intro h3{
     font-size:40px;
     margin: 5px 0;
 }
-.home_intro h3 span
-{
+.home_intro h3 span{
     color: coral;
     font-weight: 500;
+}
+.logo-img{
+    width: 500px;
+    height: 500px;
+
+    position: absolute;
+    top : 300px;
+    right: 300px;
+}
+@media (max-width: 1330px){
+    .logo-img{
+        width: 300px;
+        height: 300px;
+    
+        position: absolute;
+        top : 550px;
+        left: 100px;
+    }
 }
 /* About Section Style*/
 .about_class{
