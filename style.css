@@ -96,6 +96,8 @@ nav ul a:hover{
 /*home section style*/
 .home_intro{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     background: url("Image/bleubackground.png") no-repeat center;
     height: 100vh;
     min-height: 500px;
@@ -125,20 +127,6 @@ nav ul a:hover{
 .logo-img{
     width: 500px;
     height: 500px;
-
-    position: absolute;
-    top : 300px;
-    right: 300px;
-}
-@media (max-width: 1330px){
-    .logo-img{
-        width: 300px;
-        height: 300px;
-    
-        position: absolute;
-        top : 550px;
-        left: 100px;
-    }
 }
 /* About Section Style*/
 .about_class{
