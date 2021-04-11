@@ -56,17 +56,9 @@ nav ul a:hover{
     display: none;
 }
 @media (max-width: 865px){
-    nav{
-        align-items: center;
-    justify-content: space-between;
-    padding-right: 20px;
-    display: block;
-    }
 .checkbtn{
     display: block;
-}
-nav .logo{
-    
+    color : black;
 }
 ul{
     position: fixed;
@@ -86,9 +78,9 @@ nav ul li{
 nav ul li a{
     font-size: 20px;
 }
-a:hover,a.active{
+nav ul a:hover{
     background: none;
-    color: #0082e6;
+    color: coral;
 }
 #check:checked ~ ul{
     left: 0;
