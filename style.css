@@ -125,8 +125,8 @@ nav ul a:hover{
     font-weight: 500;
 }
 .logo-img{
-    width: 500px;
-    height: 500px;
+    width: 70%;
+    margin-right: 250px;
 }
 /* About Section Style*/
 .about_class{
@@ -137,6 +137,9 @@ nav ul a:hover{
     text-align: center;
 }
 .about_class .left img{
-    background-color: crimson;
-    width: 400px;
+    width: 30%;
+}
+.about_class h1
+{
+    padding-left: 50px;
 }
