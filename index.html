@@ -52,9 +52,51 @@
       </div>
     </div>
 </section>
+<!--Product Section-->
 <section class="production_class">
-<h1>Réalisation</h1>
-</section>
-</div>
+  <h1>Réalisation</h1>
+    <ul>
+        <li class="list active" data-filter="all">All</li>
+        <li class="list" data-filter="unity">Unity</li>
+        <li class="list" data-filter="unreal">Unreal</li>
+        <li class="list" data-filter="web">Web</li>
+        <li class="list" data-filter="vfx">VFX</li>
+    </ul>
+      <div class="product">
+        <div class="itemBox unity"><img src="Image/unity1.png"></div>
+        <div class="itemBox unity"><img src="Image/unity2.png"></div>
+        <div class="itemBox unity"><img src="Image/unity3.png"></div>
+        <div class="itemBox unreal"><img src="Image/unreal1.png"></div>
+        <div class="itemBox unreal"><img src="Image/unreal2.png"></div>
+        <div class="itemBox unreal"><img src="Image/unreal3.png"></div>
+        <div class="itemBox vfx"><img src="Image/vfx1.png"></div>
+        <div class="itemBox vfx"><img src="Image/vfx2.png"></div>
+        <div class="itemBox vfx"><img src="Image/vfx3.png"></div>
+        <div class="itemBox vfx"><img src="Image/vfx4.png"></div>
+        <div class="itemBox web"><img src="Image/web1.png"></div>
+        <div class="itemBox web"><img src="Image/web2.png"></div>
+      </div>
+  </section>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $('.list').click(function(){
+        const value = $(this).attr('data-filter');
+        if(value == 'all'){
+          $('.itemBox').show('1000');
+        }
+        else{
+          $('.itemBox').not('.'+value).hide('1000');
+          $('.itemBox').filter('.'+value).show('1000');
+        }
+    })
+    $('.list').click(function(){
+        $(this).addClass('active').siblings().removeClass('active');
+    })
+  })
+  </script>
 </body>
 </html>
