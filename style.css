@@ -100,7 +100,7 @@ nav ul a:hover{
     justify-content: space-between;
     background: url("Image/bleubackground.png") no-repeat center;
     height: 100vh;
-    min-height: 500px;
+    min-height: 300px;
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu',sans-serif;
@@ -126,20 +126,34 @@ nav ul a:hover{
 }
 .logo-img{
     width: 70%;
-    margin-right: 250px;
 }
 /* About Section Style*/
 .about_class{
+    margin-top: 50px;
     font-family: 'Poppins',sans-serif;
 }
 .about_class h2{
     font-family: 'Ubuntu',sans-serif;
+    text-decoration: underline;
+    font-size: 50px;
+    margin-bottom: 50px;
     text-align: center;
 }
 .about_class .left img{
-    width: 30%;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 200px;
+    float: left;
 }
-.about_class h1
-{
+.about_class h1{
     padding-left: 50px;
+    display: inline-block;
+}
+.production_class{
+    padding-top: 100px;
+    font-family: 'Ubuntu',sans-serif;
+    text-decoration: underline;
+    font-size: 40px;
+    margin-bottom: 50px;
+    text-align: center;
 }
