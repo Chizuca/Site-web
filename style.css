@@ -337,4 +337,16 @@ nav ul a:hover{
     #check:checked ~ ul{
         left: 0;
     }
+    /*Alerte Section*/
+    .alert-sucess{
+        z-index:1;
+        background: coral;
+        font-size: 18px;
+        padding: 20px 40px;
+        min-width: 420px;
+        position: fixed;
+        right:0;
+        top:10px;
+        border-left: 8px solid;
+    }
 }
