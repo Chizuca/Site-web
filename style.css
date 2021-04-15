@@ -293,6 +293,28 @@ nav ul a:hover{
 .contact-form .send-btn:hover{
     background: rgb(145, 109, 109);
 }
+.alert-sucess{
+    z-index:1;
+    background: coral;
+    font-size: 18px;
+    padding: 20px 40px;
+    min-width: 420px;
+    position: fixed;
+    right:0;
+    top:100px;
+    border-left: 8px solid black;
+}
+.alert-error{
+    z-index:1;
+    background: coral;
+    font-size: 18px;
+    padding: 20px 40px;
+    min-width: 420px;
+    position: fixed;
+    right:0;
+    top:100px;
+    border-left: 8px solid black;
+}
 @media screen and (max-width:950px){
     .contact_section{
         flex-direction:column;
@@ -336,17 +358,5 @@ nav ul a:hover{
     }
     #check:checked ~ ul{
         left: 0;
-    }
-    /*Alerte Section*/
-    .alert-sucess{
-        z-index:1;
-        background: coral;
-        font-size: 18px;
-        padding: 20px 40px;
-        min-width: 420px;
-        position: fixed;
-        right:0;
-        top:10px;
-        border-left: 8px solid;
     }
 }
