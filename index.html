@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio de Lucie Fribault Developpeuse</title>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 </head>
 <body>
   <!--Nav Bar Navigation-->
-  <nav>
+  <nav class="navbar">
     <label class="logo"><a href="#">Portfo<span>lio</span></a></label>
     <input type="checkbox" id="check">
     <label for="check" class="checkbtn">
@@ -62,6 +62,30 @@
 <!--About Section END-->
 
 <!--Section Production-->
+<section>
+  <div class="production">
+    <nav class="gallerynav">
+      <div class="items">
+      <span class="item active" data-name="new">New</span>
+      <span class="item" data-name="all">All</span>
+      <span class="item" data-name="unity">Unity</span>
+      <span class="item" data-name="unreal">Unreal</span>
+      <span class="item" data-name="web">Web</span>
+      <span class="item" data-name="vfx">VFX</span>
+      </div>
+    </nav>
+    <div class="gallery">
+      <div class="image" data-name="unity"><span><img src="Image/unity1.png" alt=""></span></div>
+      <div class="image" data-name="unreal"><span><img src="Image/unreal1.png" alt=""></span></div>
+      <div class="image" data-name="vfx"><span><img src="Image/vfx1.png" alt=""></span></div>
+      <div class="image" data-name="unity"><span><img src="Image/unity2.png" alt=""></span></div>
+      <div class="image" data-name="unreal"><span><img src="Image/unreal2.png" alt=""></span></div>
+      <div class="image" data-name="web"><span><img src="Image/web1.png" alt=""></span></div>
+      <div class="image" data-name="web"><span><img src="Image/web2.png" alt=""></span></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</section>
 <!--Section Production END-->
 
   <!--Section Contact me-->

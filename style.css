@@ -9,9 +9,9 @@
 body{
     font-family: 'Ubuntu',sans-serif;
 }
-/*NavBar Section CSS*/
-/*NavBar style*/
-nav{
+/*NavbarBar Section CSS*/
+/*NavbarBar style*/
+.navbar{
     background: darkgrey;
     height:  80px;
     width: 100%;
@@ -21,22 +21,22 @@ nav{
     padding-right: 30px;
     position: fixed;
 }
-/*NavBar Logo*/
-nav .logo a{
+/*NavbarBar Logo*/
+.navbar .logo a{
     color : black;
     font-size: 40px;
     font-weight: 600;
     padding-left: 50px;
 }
-nav .logo a span{
+.navbar .logo a span{
     color : coral;
 }
-/*NavBar Menu*/
-nav ul li{
+/*NavbarBar Menu*/
+.navbar ul li{
     list-style: none;
     display: inline-block;
 }
-nav ul li a{
+.navbar ul li a{
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
@@ -44,10 +44,10 @@ nav ul li a{
     color:black;
     text-transform: uppercase;
 }
-nav ul a:hover{
+.navbar ul a:hover{
     color:white;
 }
-/*NavBar Reduction Button*/
+/*NavbarBar Reduction Button*/
 .checkbtn{
     font-size: 30px;
     color : white;
@@ -60,7 +60,7 @@ nav ul a:hover{
 #check{
     display: none;
 }
-/*NavBar Délimitation */
+/*NavbarBar Délimitation */
 @media (max-width: 885px){
     .checkbtn{
         display: block;
@@ -83,15 +83,15 @@ nav ul a:hover{
         text-align: center;
         transition: all .5s;
     }
-    nav ul li{
+    .navbar ul li{
         display: block;
         margin: 50px 0;
         line-height: 30px;
     }
-    nav ul li a{
+    .navbar ul li a{
         font-size: 20px;
     }
-    nav ul a:hover{
+    .navbar ul a:hover{
         background: none;
         color: coral;
     }
@@ -155,6 +155,7 @@ nav ul a:hover{
     padding-left: 50px;
     display: inline-block;
 }
+
 /*Contact Section CSS*/
 .contact_class{
     background-color: rgb(118, 155, 190);
@@ -163,4 +164,93 @@ nav ul a:hover{
 }
 .link_class i{
    color: coral;
+}
+/*Galery */
+.production{
+   margin: 100px auto;
+   max-width: 1100px; 
+}
+.production .gallerynav{
+    display: flex;
+    justify-content: center;
+}
+.production .items{
+    display: flex;
+    max-width: 720px;
+    width: 100%;
+    justify-content: space-between;
+}
+.production .items .item{
+    padding: 7px 25px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #007bff;
+    border: 2px solid #007bff;
+    border-radius: 50px;
+    cursor: pointer;
+    transition:  all 0.3s ease;
+}
+.gallerynav .items .active,
+.gallerynav .items .item:hover{
+    color:white;
+    background: #007bff;
+}
+.gallery{
+    display : flex;
+    flex-wrap: wrap;
+    margin-top:30px;
+}
+.gallery .image{
+    padding: 7px;
+    width: calc(100%/4);
+}
+.gallery .image .hide{
+    display : none;
+}
+.gallery .image .show{
+    display : block;
+}
+.gallery .image span{
+    display: flex;
+    width : 100%;
+    overflow: hidden;
+}
+.gallery .image img{
+    width: 100%;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+}
+
+.gallery .image:hover img{
+    transform: scale(1.1);
+}
+@media(max-width: 1000px){
+    .gallery .image{
+        width: calc(100%/3);
+    }
+}
+@media(max-width:800px){
+    .gallery .image{
+        width: calc(100% / 2);
+    }
+}
+@media(max-width:700px){
+    .production .items{
+        max-width: 600px;
+    }
+    .gallerynav .items .item{
+        padding: 7px 15px;
+    }
+}
+@media(max-width:600px){
+    .production .items{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .gallerynav .items .item{
+        margin: 5px;
+    }
+    .gallery .image{
+        width: 100%;
+    }
 }
