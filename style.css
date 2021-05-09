@@ -20,6 +20,7 @@ body{
     justify-content: space-between;
     padding-right: 30px;
     position: fixed;
+    z-index: 1000;
 }
 /*NavbarBar Logo*/
 .navbar .logo a{
@@ -204,10 +205,10 @@ body{
     padding: 7px;
     width: calc(100%/4);
 }
-.gallery .image .hide{
+.hide{
     display : none;
 }
-.gallery .image .show{
+.show{
     display : block;
 }
 .gallery .image span{
