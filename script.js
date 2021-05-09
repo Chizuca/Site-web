@@ -14,9 +14,11 @@ window.onload = ()=>{ //after window loaded
         //if user selected item data-name value is equal to images data-name value
         //or user selected item data-name value is equal to "all"
         if((filterImges == filterName) || (filterName == "all")){
+          image.style.display = 'block';
           image.classList.remove("hide"); //first remove the hide class from the image
           image.classList.add("show"); //add show class in image
         }else{
+          image.style.display = 'none';
           image.classList.add("hide"); //add hide class in image
           image.classList.remove("show"); //remove show class from the image
         }
